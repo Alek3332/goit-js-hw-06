@@ -19,11 +19,4 @@ const markup = images
 	.join('')
 
   ulEl.insertAdjacentHTML('beforeend', markup)
-    // const img = document.createElement('img')
   
-//const pictures = document.querySelectorAll('.picture')
-//ulEl.style.display = 'flex';
-//ulEl.style.flexWrap = 'column-reverse'
-//ulEl.style.listStyle = 'none'
-//ulEl.style.gap = '40px'
-//ulEl.style.justifyContent = 'center'
