@@ -7,14 +7,11 @@ const ingredients = [
   'Condiments',
 ];
 const ulEl = document.querySelector('#ingredients')
-const liArray = []
+const itemsRef = ingredients.map((ingredient) => {
+  const item = document.createElement('li');
+  item.textContent = ingredient;
+  item.classList.add('item');
+  return item;
+});
 
-ingredients.forEach(ingredient => {
-	const item = document.createElement('li')
-	item.className = 'item'
-	item.textContent = ingredient
-	liArray.push(item)
-})
-
-ulEl.append(...liArray)
-console.log(`ulEl`, ulEl)
+ulEl.append(...itemsRef);
